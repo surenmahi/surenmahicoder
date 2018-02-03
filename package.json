@@ -1,0 +1,18 @@
+{
+  "name": "studyhall",
+  "version": "1.0.0",
+  "description": "development",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Suren",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
+  }
+}
