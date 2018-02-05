@@ -62,16 +62,30 @@ body{
       font-size: 19px;
     }
     .bottom-left {
+      padding-top: .6%;
+    padding-left: 1.1%;
+    border-radius: 100%;
+    background-color: #d2d2d2;
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: 5%;
     left: 3%;
     animation: fadeInLeft .8s cubic-bezier(.12,-0.14,.6,1.33);
+    box-shadow: 0px 3px 5px black;
     }
     .bottom-right {
+      padding-top:.6%;
+    padding-left:.9%;
+    border-radius: 100%;
+    background-color: #d2d2d2;
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: 5%;
     right: 2%;
     animation: fadeIn .8s cubic-bezier(.12,-0.14,.6,1.33);
+    box-shadow: 0px 3px 5px black;
     }
     #imgeCall{
       text-decoration: none;
@@ -82,6 +96,17 @@ body{
       text-decoration: none;
       background-image:url(../images/marker.png);
       font-weight: bold;
+    }#photo{
+      padding-top:1%;
+    padding-left:.1%;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+      background-color: #d2d2d2;
+      color:white;
+      text-decoration:none;
+      box-shadow: 0px 3px 5px black;
     }
     .card-title{
       color: white;
@@ -242,17 +267,37 @@ body{
           	/* background-attachment: relative; */
           }
           .bottom-left {
-          position: absolute;
+            padding-top: 2%;
+          padding-left: 3.5%;
+          border-radius: 100%;
+          background-color: #d2d2d2;
+          width: 40px;
+          height: 40px;
+          position: center;
           top: 2%;
-          left: 3%;
+          left: 5%;
           animation: fadeInLeft .8s cubic-bezier(.12,-0.14,.6,1.33);
+          box-shadow: 0px 3px 5px black;
           }
           .bottom-right {
+            padding-top:2%;
+          padding-left:2.9%;
+          border-radius: 100%;
+          background-color: #d2d2d2;
+          width: 40px;
+          height: 40px;
           position: absolute;
           top: 2%;
           right: 2%;
           animation: fadeIn .8s cubic-bezier(.12,-0.14,.6,1.33);
+          box-shadow: 0px 3px 5px black;
           }
+          /* #call{
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 100%;
+          } */
           #Name{
           margin-top: -10%;
           font-size: 70px;
