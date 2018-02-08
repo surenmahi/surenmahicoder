@@ -1,46 +1,244 @@
-<!-- <div class="row" style="margin-top:2%;">
-  <div class="bottom-left col-xs-2" id="call">
-    <a id="imgeCall" href="tel:+91-9994766212">
-      <p id="call">
-        <i class="fa fa-mobile" aria-hidden="true" style="font-size:24px;color:#232323;"></i>
-      </p>
-    </a>
-  </div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#card1').click(function(){
+      $('#card1').css({
+        "height":"60px",
+        "margin-top":"23%",
+        "transition":".5s",
+        "width":"100%",
+        "margin-left":"-3%"
+      });
+      $('#card2').css({
+        "height":"120px",
+        "margin-top":"80%",
+        "transition":".5s",
+        "width":"40%",
+        "margin-left":"52%"
+      });
+      $('#card3').css({
+        "height":"120px",
+        "margin-top":"120%",
+        "transition":".5s",
+        "width":"40%",
+        "margin-left":"25%"
+      });
+    });
+    $('#card2').click(function(){
+      $('#card2').css({
+        "height":"60px",
+        "margin-top":"23%",
+        "transition":".5s",
+        "width":"100%",
+        "margin-left":"-3%"
+      });
+      $('#card1').css({
+        "height":"120px",
+        "margin-top":"80%",
+        "transition":".5s",
+        "width":"40%",
+        "margin-left":"0%"
+      });
+      $('#card3').css({
+        "height":"120px",
+        "margin-top":"120%",
+        "transition":".5s",
+        "width":"40%",
+        "margin-left":"25%"
+      });
+    });
+    $('#card3').click(function(){
+      $('#card3').css({
+        "height":"60px",
+        "margin-top":"23%",
+        "transition":".5s",
+        "width":"100%",
+        "margin-left":"-3%"
+      });
+      $('#card2').css({
+        "height":"120px",
+        "margin-top":"80%",
+        "transition":".5s",
+        "width":"40%",
+        "margin-left":"52%"
+      });
+      $('#card1').css({
+        "height":"120px",
+        "margin-top":"80%",
+        "transition":".5s",
+        "width":"40%",
+        "margin-left":"0%"
+      });
+    });
+  });
+  $(document).ready(function(){
+    $('#link1').css({
+      "animation": "zoomIn .2s"
+    });
+    $('#link2').css({
+      "animation": "zoomIn .4s"
+    });
+    $('#link3').css({
+      "animation": "zoomIn .6s"
+    });
+    $('#link4').css({
+      "animation": "zoomIn .8s"
+    });
+    $('#link5').css({
+      "animation": "zoomIn 1s"
+    });
+  });
+  $(document).ready(function(){
+    $("#Name").css({
+      "animation": "fadeInUp 1s"
+    });
+  });
+  $(document).ready(function(){
+    $("#brand").css({
+      "animation": "fadeIn .2s"
+    });
+  });
+  $(document).ready(function(){
+    $("#card1").css({
+      "animation": "zoomIn .9s"
+    });
+    $("#card2").css({
+      "animation": "zoomIn 1s"
+    });
+    $("#card3").css({
+      "animation": "zoomIn 1.1s"
+    });
+  });
+  $(document).ready(function(){
+    $("#foot").css({
+      "animation": "fadeIn 5.5s"
+    });
+  });
+    $(document).ready(function(){
+  $('#close1,#close2,#close3').click(function(){
+    console.log("close");
+    $('#card1').css({
+      "height":"120px",
+      "margin-top":"80%",
+      "transition":".5s",
+      "width":"40%",
+      "margin-left":"0%"
+    });
+    $('#card2').css({
+      "height":"120px",
+      "margin-top":"80%",
+      "transition":".5s",
+      "width":"40%",
+      "margin-left":"52%"
+    });
+    $('#card3').css({
+      "height":"120px",
+      "margin-top":"120%",
+      "transition":".5s",
+      "width":"40%",
+      "margin-left":"25%"
+    });
+  });
+  });
+</script>
+<div id="map" ng-init="initMap()"></div>
 
-  <div class="bottom-left col-xs-2" id="fb">
-    <a id="imgeCall" href="tel:+91-9994766212">
-      <p id="fb">
-        <i class="fa fa-mobile" aria-hidden="true" style="font-size:24px;color:#232323;"></i>
-      </p>
-    </a>
+<div class="row">
+  <ul>
+    <li id="link1"><a href="tel:+91-9994766212"><i class="fa fa-mobile" aria-hidden="true"></i></a></li>
+    <li id="link2"><a href="https://www.facebook.com/Pravara-Study-Hall-204572583310197/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+    <li id="link3"><a href="https://www.google.co.in/maps/place/Pravara+Study+Hall/@13.0866496,80.1986992,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPki362r12B2fhNRRUzeqcxJyf1STrdxEBZtAhE!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPki362r12B2fhNRRUzeqcxJyf1STrdxEBZtAhE%3Dw392-h220-k-no!7i5312!8i2988!4m19!1m13!4m12!1m4!2m2!1d80.1137089!2d13.0733522!4e1!1m6!1m2!1s0x3a52641b350a3b55:0x98d4557e50ffe41c!2sPravara+Study+Hall,+254-116,+Jawaharlal+Nehru+Rd,+Saptagiri+Colony,+Anna+Nagar,+Chennai,+Tamil+Nadu+600040!2m2!1d80.1988324!2d13.0866505!3m4!1s0x3a52641b350a3b55:0x98d4557e50ffe41c!8m2!3d13.0866505!4d80.1988324"><i class="fa fa-image" aria-hidden="true"></i></a></li>
+    <li id="link4"><a href="https://twitter.com/pravara_study?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    <li id="link5"><a href=""  ng-click = 'redirectFun()'><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+  </ul>
+</div>
+<div class="container">
+    <div class="col-lg-6">
+        <img src="../public/images/banner.png" id="brand" alt="">
+        <h1 id="Name">Pravara</h1>
+        <h4 id="Des"> S t u d y H a l l</h4>
+        <h6 id="qu"> EXPERIENCE PEACEFUL STUDYING</h6>
+    </div>
   </div>
-
-  <div class="bottom-left col-xs-4" id="call">
-    <a id="imgeCall" href="https://www.google.co.in/maps/place/Pravara+Study+Hall/@13.0866496,80.1986992,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPki362r12B2fhNRRUzeqcxJyf1STrdxEBZtAhE!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPki362r12B2fhNRRUzeqcxJyf1STrdxEBZtAhE%3Dw392-h220-k-no!7i5312!8i2988!4m19!1m13!4m12!1m4!2m2!1d80.1137089!2d13.0733522!4e1!1m6!1m2!1s0x3a52641b350a3b55:0x98d4557e50ffe41c!2sPravara+Study+Hall,+254-116,+Jawaharlal+Nehru+Rd,+Saptagiri+Colony,+Anna+Nagar,+Chennai,+Tamil+Nadu+600040!2m2!1d80.1988324!2d13.0866505!3m4!1s0x3a52641b350a3b55:0x98d4557e50ffe41c!8m2!3d13.0866505!4d80.1988324">
-      <p id="photo">
-        <i class="fa fa-camera" aria-hidden="true" style="font-size:24px;color:#232323;"></i>
-      </p>
-    </a>
-  </div>
-
-  <div class="bottom-left col-xs-2" id="call">
-    <a id="imgeCall" href="tel:+91-9994766212">
-      <p id="call">
-        <i class="fa fa-mobile" aria-hidden="true" style="font-size:24px;color:#232323;"></i>
-      </p>
-    </a>
-  </div>
-
-  <div class="bottom-right  col-xs-2" id="loc">
-    <a id="imgeDir" href=""  ng-click = 'redirectFun()'>
-      <p id="mark">
-        <i class="fa fa-map-marker" aria-hidden="true" style="font-size:24px;color:#232323;"></i>
-      </p>
-    </a>
-  </div>
-</div> -->
 
 <div class="container">
+  <div class="col-sm-4">
+    <button type="button"  id="card1" class="btn btn default" data-toggle="modal" data-target="#exampleModal1" name="button">Timing Details</button>
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" id="modalback1">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Timing Details</h5>
+      </div>
+      <div class="modal-body">
+        <h5 class="card-subtitle" style="color:#white;">Morning Batch</h5>
+        <h5 class="card-subtitle" style="color:#white;margin-top:-5px;">07:00 - 12:00</h5>
+        <h5 class="card-subtitle" style="color:#white;margin-top:-5px;">Afternoon Batch</h5>
+        <h5 class="card-subtitle" style="color:#white;margin-top:-5px;">12:00 - 17:00</h5>
+        <h5 class="card-subtitle" style="color:#white;margin-top:-5px;">Evening Batch</h5>
+        <h5 class="card-subtitle" style="color:#white;margin-top:-5px;">17:00 - 22:00</h5>
+        <h5 class="card-subtitle" style="color:#white;margin-top:-5px;">Full Batch</h5>
+        <h5 class="card-subtitle" style="color:#white;margin-top:-5px;">07:00 - 22:00</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close1">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="col-sm-4">
+    <button type="button"  id="card2" class="btn btn default" data-toggle="modal" data-target="#exampleModal2" name="button">Facilities</button>
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" id="modalback2">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Facilities</h5>
+      </div>
+      <div class="modal-body">
+        <h5 class="card-subtitle"  style="color:#white;">- WiFi</h5>
+        <h5 class="card-subtitle"  style="color:#white;">- Fully air conditioned</h5>
+        <h5 class="card-subtitle"  style="color:#white;">- Seperate hall for women</h5>
+        <h5 class="card-subtitle"  style="color:#white;">- Individual cabin for study</h5>
+        <h5 class="card-subtitle"  style="color:#white;">- Discussion Hall</h5>
+        <h5 class="card-subtitle"  style="color:#white;">- Reputed Magazines</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close2">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="col-sm-4">
+    <button type="button"  id="card3" class="btn btn default"data-toggle="modal" data-target="#exampleModal3" name="button">More Info</button>
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content"  id="modalback3">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">More Info</h5>
+      </div>
+      <div class="modal-body">
+        <h5 class="card-subtitle" style="color:#white;font-weight: bold;">Registration</h5>
+        <h5 class="card-subtitle" style="color:#white;">Come and Register yourself</h5>
+        <h5 class="card-subtitle" style="color:#white;"><i class="fa fa-inr" style="font-size:16px"></i> 600 per batch</h5>
+        <h5 class="card-subtitle" style="color:#white;"><i class="fa fa-inr" style="font-size:16px"></i> 1800 per month</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close3" style="margin-left:0%;">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row" id="foot">
+    <p>120/1, Thirumangalam, Sapthagiri Colony, 15th Main Road, Anna Nagar West, Chennai - 600 040</p>
+  </div>
+</div>
+
+<!-- <div class="container">
   <div class="row">
       <div class="col-xs-2" id="linkcircles">
         <a id="imgeCall" href="tel:+91-9994766212">
@@ -92,8 +290,6 @@
       <div id="map" ng-init="initMap()"></div>
       </div>
       <br>
-      <!-- <a href="https://www.google.co.in/maps/place/Pravara+Study+Hall/@13.0866496,80.1986992,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPki362r12B2fhNRRUzeqcxJyf1STrdxEBZtAhE!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPki362r12B2fhNRRUzeqcxJyf1STrdxEBZtAhE%3Dw392-h220-k-no!7i5312!8i2988!4m19!1m13!4m12!1m4!2m2!1d80.1137089!2d13.0733522!4e1!1m6!1m2!1s0x3a52641b350a3b55:0x98d4557e50ffe41c!2sPravara+Study+Hall,+254-116,+Jawaharlal+Nehru+Rd,+Saptagiri+Colony,+Anna+Nagar,+Chennai,+Tamil+Nadu+600040!2m2!1d80.1988324!2d13.0866505!3m4!1s0x3a52641b350a3b55:0x98d4557e50ffe41c!8m2!3d13.0866505!4d80.1988324" ><i class="fa fa-camera" id="photo" style="color: #232323;"></i></a> -->
-
     </div>
 
       </div>
@@ -106,7 +302,6 @@
               <div class="card" id="card" >
                 <h3 class="card-title">Timing Details</h3>
                 <img id="timeImg" src="../public/images/time1.png">
-                <!-- <p style="float:right;margin-top:10px;">card</p> -->
             <div class="card-body1" style="text-align:center; font-weightbold;">
               <h5 class="card-subtitle" style="color:#white;">Morning Batch</h5>
               <h5 class="card-subtitle" style="color:#white;margin-top:-5px;">07:00 - 12:00</h5>
@@ -116,9 +311,6 @@
               <h5 class="card-subtitle" style="color:#white;margin-top:-5px;">17:00 - 22:00</h5>
               <h5 class="card-subtitle" style="color:#white;margin-top:-5px;">Full Batch</h5>
               <h5 class="card-subtitle" style="color:#white;margin-top:-5px;">07:00 - 22:00</h5>
-
-              <!-- <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a> -->
             </div>
           </div>
             </div>
@@ -128,17 +320,12 @@
                 <img id="timeImg" src="../public/images/faci.png">
             <div class="card-body1" style="text-align:center;">
 
-              <!-- <h5 class="card-subtitle  " style="color:#000000;">Morning Batch</h5> -->
               <h5 class="card-subtitle"  style="color:#white;">- WiFi</h5>
               <h5 class="card-subtitle"  style="color:#white;">- Fully air conditioned</h5>
-              <!-- <h5 class="card-subtitle  " style="color:#000000;">Afternoon Batch</h5> -->
               <h5 class="card-subtitle"  style="color:#white;">- Seperate hall for women</h5>
               <h5 class="card-subtitle"  style="color:#white;">- Individual cabin for study</h5>
-              <!-- <h5 class="card-subtitle  " style="color:#000000;">Evening Batch</h5> -->
               <h5 class="card-subtitle"  style="color:#white;">- Discussion Hall</h5>
               <h5 class="card-subtitle"  style="color:#white;">- Reputed Magazines</h5>
-              <!-- <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a> -->
             </div>
           </div>
             </div>
@@ -154,29 +341,9 @@
               <h5 class="card-subtitle" style="color:#white;"><i class="fa fa-inr" style="font-size:16px"></i> 600 per batch</h5>
               <h5 class="card-subtitle" style="color:#white;"><i class="fa fa-inr" style="font-size:16px"></i> 1800 per month</h5>
 
-              <!-- <p class="card-text">Come and Register yourself</p>
-              <p class="card-text" style="font-size:15px;">600 per batch</p>
-              <p class="card-text" style="font-size:15px;">1800 per month</p> -->
-              <!-- <a href=style=""><p class="card-text" style="font-size:20px;">View Photos</p></a> -->
-              <!-- <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a> -->
             </div>
           </div>
             </div>
-            <!-- <div class="col-lg-3">
-              <div class="card" style="margin-bottom:10px;">
-          <div class="card-body4" style="text-align:center;">
-            <h3 class="card-title">ADDRESS</h3>
-
-            <p class="card-text">120/1, Thirumangalam,</p>
-            <p class="card-text">Sapthagiri Colony,15th Main Road,</p>
-            <p class="card-text">Anna Nagar West,</p>
-            <p class="card-text">Chennai - 600 040</p>
-            <a href="#!/direction" class="card-link" style="text-decoration:none;color:black;" data-toggle="modal" data-target="#myModal"><p class="card-text" style="font-size:20px;"><img src="../public/images/marker.png" style="width:35px; height:auto;"> Get Location</p></a>
-
-          </div>
-        </div>
-            </div> -->
           </div>
         </div>
 
@@ -184,4 +351,4 @@
           <div class="row" id="foot">
             <p>120/1, Thirumangalam, Sapthagiri Colony, 15th Main Road, Anna Nagar West, Chennai - 600 040</p>
           </div>
-        </div>
+        </div> -->
