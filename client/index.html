@@ -5,28 +5,43 @@
   <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0, height=device-height,width=device-width">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pravara</title>
-  <!-- <link rel="stylesheet" href="animate.min.css"> -->
-  <link rel="shortcut icon" href="public/images/p.png" type"image/png">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="./public/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="./public/css/bootstrap.min.css.map"> -->
   <link rel="stylesheet" href="./public/css/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="/public/js/angular.min.js"></script>
   <script src="/public/js/angular-route.min.js"></script>
   <script src="/public/js/angular-loader.min.js"></script>
-  <script src="/public/js/jquery-3.2.1.min.js"></script>
   <script src="app.js"></script>
 
   <script src="/controllers/HomeController.js"></script>
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkQCNIfRoHq8yCmZpU9J__yKa1ZAbE6GI&libraries=places"></script>
+
 </head>
-<body>
+
+<body  onload="myFunction()">
   <script src="public/js/jquery.js"></script>
   <div ng-view></div>
+    <div id="loader"></div>
   <!-- <div> index </div> -->
+  <script>
+  var myVar;
+
+  function myFunction() {
+      console.log("preloader");
+      myVar = setTimeout(showPage, 1750);
+  }
+
+  function showPage() {
+    console.log("after");
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
 </body>
 </html>
