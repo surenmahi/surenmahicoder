@@ -5,7 +5,7 @@ body{
   height: 200%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /*background:linear-gradient(to bottom right,#00d8ff 0%, #015f90 90%);*/
+  /* background:linear-gradient(to bottom right,#00d8ff 0%, #015f90 90%); */
   background: radial-gradient(circle, #4b4b4b, #1f1f1f);
 }
   #banner{
@@ -152,15 +152,16 @@ body{
     height: 15%;
     margin-top: 45%;
     /* margin-bottom: -15%; */
-    margin-left: 42.5%;
-    margin-right: 42.5%;
-    border: 8px solid #f3f3f3;
+    margin-left: 40%;
+    margin-right: 40%;
+    /* border: 8px solid #f3f3f3; */
     border-radius: 50%;
-    border-top: 8px solid #3498db;
+    border-top: 16px solid #3498db;
     width: 90px;
     height: 90px;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
+    background: radial-gradient(circle, #4b4b4b, #1f1f1f);
   }
 
   @-webkit-keyframes spin {
