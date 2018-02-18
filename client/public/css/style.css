@@ -5,7 +5,8 @@ body{
   height: 200%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background:linear-gradient(to bottom right,#00d8ff 0%, #015f90 90%);
+  /*background:linear-gradient(to bottom right,#00d8ff 0%, #015f90 90%);*/
+  background: radial-gradient(circle, #4b4b4b, #1f1f1f);
 }
   #banner{
     margin-top: -5%;
