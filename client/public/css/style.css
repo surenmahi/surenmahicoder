@@ -80,8 +80,8 @@ body{
   }
   .accordion {
       margin-top: 10%;
-      background-color: #fff;
-      color: #015f90;
+      background-color: transparent;
+      color: #fff;
       font-weight: bold;
       font-family: Century Gothic, sans-serif;
       cursor: pointer;
@@ -120,7 +120,7 @@ body{
       text-align: center;
       width: 60%;
       /* padding: 0 18px; */
-      background-color: white;
+      background-color: transparent;
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.2s ease-out;
@@ -129,7 +129,7 @@ body{
 
   .card-body1{
 
-    color: #015f90;
+    color: #fff;
     font-weight: bold;
     font-family: Century Gothic, sans-serif;
     padding-top: 5%;
