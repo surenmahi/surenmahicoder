@@ -1,10 +1,10 @@
-var app = angular.module('myApp',['ngRoute']);
-app.config(function($routeProvider){
+var app = angular.module('mySamples',['ngRoute']);
+app.config(function($routeProvider,$locationProvider){
+  $locationProvider.html5Mode({
+  enabled:true,
+  requireBase:false
+});
   $routeProvider.when('/',{
-    templateUrl:'/views/home.html',
-    controller:'HomeController'
-  }).when('/direction',{
-    templateUrl:'/views/location.html',
-    controller:'HomeController'
-  });
+    templateUrl:'/views/home.html'
+  }).otherwise({redirectTo:'/'});
 });
