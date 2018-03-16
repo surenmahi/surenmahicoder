@@ -167,7 +167,7 @@
     display: inline;
     color: white;
     text-align: center;
-    padding: 8px;
+    padding: 10px;
     text-decoration: none;
 }
 #portfolio .card ul {
@@ -186,6 +186,9 @@
     text-decoration: none;
 }
 #foot .row{
+	width: 90%;
+	padding-left:5%;
+	padding-right: 5%;
 	padding-top:2%;
 	padding-bottom: 2%;
 }
